@@ -4,8 +4,16 @@ export const JohnLewis: Store = {
 	currency: '£',
 	labels: {
 		inStock: {
-			container: '#button--add-to-basket',
-			text: ['Add to your basket']
+			container: '.buyingOptions',
+			text: ['Pre-order Now', 'Buy New']
+		},
+		maxPrice: {
+			container: '.buyingOptions .btnPrice',
+			euroFormat: false
+		},
+		outOfStock: {
+			container: '.cq-bf-middle',
+			text: ['out of stock']
 		}
 	},
 	links: [
@@ -20,9 +28,15 @@ export const JohnLewis: Store = {
 			brand: 'sony',
 			model: 'ps5 console',
 			series: 'sonyps5c',
+			url: 'https://www.johnlewis.com/sony-playstation-5-console-with-dualsense-controller/white/p5115192'
+		},
+		{
+			brand: 'sony',
+			model: 'ps5 digital',
+			series: 'sonyps5de',
 			url:
 				'https://www.johnlewis.com/sony-playstation-5-console-with-dualsense-controller/white/p5115192'
-		}
+		},
 	],
 	name: 'johnlewis'
 };

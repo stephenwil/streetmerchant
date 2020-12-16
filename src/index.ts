@@ -16,7 +16,12 @@ let browser: Browser | undefined;
  * Starts the bot.
  */
 async function main() {
-	const args: string[] = [];
+	// const args: string[] = [];
+
+	const args: string[] = [
+		'--no-sandbox',
+		'--disable-setuid-sandbox'
+	  ];
 
 	// Skip Chromium Linux Sandbox
 	// https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#setting-up-chrome-linux-sandbox

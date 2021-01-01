@@ -17,3 +17,6 @@ jobs:
           owner: jef
           base: main
           head: main
+          auto_approve: true
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+    

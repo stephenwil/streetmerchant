@@ -19,4 +19,5 @@ jobs:
           head: main
           auto_approve: true
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          merge_method: rebase
     
